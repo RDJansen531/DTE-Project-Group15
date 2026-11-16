@@ -7,8 +7,8 @@ Smart-home digital twin using the CASAS Aruba recording.
 | Step | Status | Where |
 | --- | --- | --- |
 | 1. Dataset | Done | `scripts/prepare_aruba.py`, sections below |
-| 2. Historical replay | Ready to verify | `replay/`, [docs/step2_replay.md](docs/step2_replay.md) |
-| 3. Representation model | Not started | |
+| 2. Historical replay | Done | `replay/`, [docs/step2_replay.md](docs/step2_replay.md) |
+| 3. Representation model | Ready to verify | `twin/`, `config/home.json`, [docs/step3_model.md](docs/step3_model.md) |
 | 4. Machine learning | Not started | |
 | 5. Visualisation | Not started | |
 | 6. Docker packaging | Not started | |
@@ -102,9 +102,9 @@ SHA-256 and the preparation script's SHA-256 are recorded in the manifest.
 
 The physical inventory is 31 motion sensors (`M001`–`M031`), three door contacts
 (`D001`, `D002`, `D004`) and five temperature sensors (`T001`–`T005`). Room mappings
-are currently `null`. Populate them from the CASAS floor plan before implementing
-room occupancy. The floor plans are available with the companion release at
-<https://zenodo.org/records/15708568>.
+are `null` in the generated `sensors.json`. The room and floor-plan position of
+every sensor are kept in `config/home.json`, read from the CASAS floor plan in the
+companion release at <https://zenodo.org/records/15708568>.
 
 ## Reading events
 

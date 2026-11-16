@@ -1,0 +1,401 @@
+{
+  "home_id": "aruba",
+  "floorplan": {
+    "image": "docs/images/aruba_floorplan.jpg",
+    "width": 433,
+    "height": 358,
+    "source": "https://zenodo.org/records/15708568",
+    "note": "x and y are pixel positions on the floorplan image, read from it by hand (about 5 px accuracy)."
+  },
+  "rooms": {
+    "kitchen": {
+      "name": "Kitchen",
+      "adjacent": [
+        "dining",
+        "hallway"
+      ]
+    },
+    "dining": {
+      "name": "Dining area",
+      "adjacent": [
+        "kitchen",
+        "living",
+        "hallway"
+      ]
+    },
+    "living": {
+      "name": "Living room",
+      "adjacent": [
+        "dining",
+        "hallway",
+        "bedroom"
+      ]
+    },
+    "bedroom": {
+      "name": "Bedroom",
+      "adjacent": [
+        "living",
+        "ensuite"
+      ]
+    },
+    "ensuite": {
+      "name": "En-suite toilet",
+      "adjacent": [
+        "bedroom"
+      ],
+      "note": "Unlabelled on the floor plan and without a sensor inside. Inferred from the Bed_to_Toilet annotations: M004 at its doorway is the main sensor during those episodes, and the route to the other bathroom stays silent."
+    },
+    "hallway": {
+      "name": "Hallway",
+      "adjacent": [
+        "kitchen",
+        "dining",
+        "living",
+        "office",
+        "bathroom"
+      ]
+    },
+    "office": {
+      "name": "Office",
+      "adjacent": [
+        "hallway"
+      ]
+    },
+    "bathroom": {
+      "name": "Bathroom",
+      "adjacent": [
+        "hallway"
+      ]
+    }
+  },
+  "exit_doors": {
+    "D001": {
+      "name": "Front door",
+      "motion_sensors": [
+        "M011"
+      ]
+    },
+    "D002": {
+      "name": "Back door",
+      "motion_sensors": [
+        "M018"
+      ]
+    },
+    "D004": {
+      "name": "Garage door",
+      "motion_sensors": [
+        "M030",
+        "M029"
+      ]
+    }
+  },
+  "not_in_recording": {
+    "D003": "Closet door drawn on the floorplan. It has no readings in the Aruba recording."
+  },
+  "sensors": {
+    "D001": {
+      "sensor_type": "door",
+      "room": "living",
+      "x": 192,
+      "y": 340,
+      "place": "front door"
+    },
+    "D002": {
+      "sensor_type": "door",
+      "room": "kitchen",
+      "x": 135,
+      "y": 29,
+      "place": "back door"
+    },
+    "D004": {
+      "sensor_type": "door",
+      "room": "hallway",
+      "x": 272,
+      "y": 29,
+      "place": "garage door"
+    },
+    "M001": {
+      "sensor_type": "motion",
+      "room": "bedroom",
+      "x": 309,
+      "y": 312,
+      "place": "foot of the bed, by the dresser",
+      "coverage": "spot"
+    },
+    "M002": {
+      "sensor_type": "motion",
+      "room": "bedroom",
+      "x": 236,
+      "y": 311,
+      "place": "bed, lower side",
+      "coverage": "spot"
+    },
+    "M003": {
+      "sensor_type": "motion",
+      "room": "bedroom",
+      "x": 235,
+      "y": 274,
+      "place": "bed, upper side",
+      "coverage": "spot"
+    },
+    "M004": {
+      "sensor_type": "motion",
+      "room": "ensuite",
+      "x": 354,
+      "y": 234,
+      "place": "doorway of the en-suite toilet",
+      "coverage": "spot"
+    },
+    "M005": {
+      "sensor_type": "motion",
+      "room": "bedroom",
+      "x": 276,
+      "y": 240,
+      "place": "between bed and wardrobes",
+      "coverage": "spot"
+    },
+    "M006": {
+      "sensor_type": "motion",
+      "room": "bedroom",
+      "x": 214,
+      "y": 239,
+      "place": "bedroom door, inside",
+      "coverage": "spot"
+    },
+    "M007": {
+      "sensor_type": "motion",
+      "room": "bedroom",
+      "x": 287,
+      "y": 269,
+      "place": "whole bedroom",
+      "coverage": "area"
+    },
+    "M008": {
+      "sensor_type": "motion",
+      "room": "living",
+      "x": 203,
+      "y": 239,
+      "place": "bedroom door, living-room side",
+      "coverage": "spot"
+    },
+    "M009": {
+      "sensor_type": "motion",
+      "room": "living",
+      "x": 159,
+      "y": 246,
+      "place": "sofa, upper seat",
+      "coverage": "spot"
+    },
+    "M010": {
+      "sensor_type": "motion",
+      "room": "living",
+      "x": 160,
+      "y": 289,
+      "place": "sofa, lower seat",
+      "coverage": "spot"
+    },
+    "M011": {
+      "sensor_type": "motion",
+      "room": "living",
+      "x": 192,
+      "y": 333,
+      "place": "front door, inside",
+      "coverage": "spot"
+    },
+    "M012": {
+      "sensor_type": "motion",
+      "room": "living",
+      "x": 96,
+      "y": 292,
+      "place": "lower living room",
+      "coverage": "spot"
+    },
+    "M013": {
+      "sensor_type": "motion",
+      "room": "living",
+      "x": 91,
+      "y": 221,
+      "place": "upper living room",
+      "coverage": "spot"
+    },
+    "M014": {
+      "sensor_type": "motion",
+      "room": "dining",
+      "x": 99,
+      "y": 150,
+      "place": "dining table",
+      "coverage": "spot"
+    },
+    "M015": {
+      "sensor_type": "motion",
+      "room": "kitchen",
+      "x": 141,
+      "y": 104,
+      "place": "kitchen, right side",
+      "coverage": "spot"
+    },
+    "M016": {
+      "sensor_type": "motion",
+      "room": "kitchen",
+      "x": 67,
+      "y": 95,
+      "place": "kitchen, left counter",
+      "coverage": "spot"
+    },
+    "M017": {
+      "sensor_type": "motion",
+      "room": "kitchen",
+      "x": 135,
+      "y": 58,
+      "place": "kitchen, towards the back door",
+      "coverage": "spot"
+    },
+    "M018": {
+      "sensor_type": "motion",
+      "room": "kitchen",
+      "x": 133,
+      "y": 35,
+      "place": "back door, inside",
+      "coverage": "spot"
+    },
+    "M019": {
+      "sensor_type": "motion",
+      "room": "kitchen",
+      "x": 100,
+      "y": 80,
+      "place": "whole kitchen",
+      "coverage": "area"
+    },
+    "M020": {
+      "sensor_type": "motion",
+      "room": "living",
+      "x": 111,
+      "y": 239,
+      "place": "whole living room",
+      "coverage": "area"
+    },
+    "M021": {
+      "sensor_type": "motion",
+      "room": "hallway",
+      "x": 193,
+      "y": 161,
+      "place": "hallway, kitchen end",
+      "coverage": "spot"
+    },
+    "M022": {
+      "sensor_type": "motion",
+      "room": "hallway",
+      "x": 266,
+      "y": 161,
+      "place": "hallway, middle",
+      "coverage": "spot"
+    },
+    "M023": {
+      "sensor_type": "motion",
+      "room": "hallway",
+      "x": 297,
+      "y": 134,
+      "place": "hallway, by the bathroom door",
+      "coverage": "spot"
+    },
+    "M024": {
+      "sensor_type": "motion",
+      "room": "bathroom",
+      "x": 369,
+      "y": 160,
+      "place": "whole bathroom",
+      "coverage": "area"
+    },
+    "M025": {
+      "sensor_type": "motion",
+      "room": "office",
+      "x": 399,
+      "y": 105,
+      "place": "office, armchair corner",
+      "coverage": "spot"
+    },
+    "M026": {
+      "sensor_type": "motion",
+      "room": "office",
+      "x": 377,
+      "y": 55,
+      "place": "office desk",
+      "coverage": "spot"
+    },
+    "M027": {
+      "sensor_type": "motion",
+      "room": "office",
+      "x": 367,
+      "y": 74,
+      "place": "whole office",
+      "coverage": "area"
+    },
+    "M028": {
+      "sensor_type": "motion",
+      "room": "hallway",
+      "x": 296,
+      "y": 101,
+      "place": "office door",
+      "coverage": "spot"
+    },
+    "M029": {
+      "sensor_type": "motion",
+      "room": "hallway",
+      "x": 259,
+      "y": 64,
+      "place": "corridor to the garage door",
+      "coverage": "spot"
+    },
+    "M030": {
+      "sensor_type": "motion",
+      "room": "hallway",
+      "x": 271,
+      "y": 35,
+      "place": "garage door, inside",
+      "coverage": "spot"
+    },
+    "M031": {
+      "sensor_type": "motion",
+      "room": "hallway",
+      "x": 199,
+      "y": 126,
+      "place": "hallway closet",
+      "coverage": "spot"
+    },
+    "T001": {
+      "sensor_type": "temperature",
+      "room": "bedroom",
+      "x": 245,
+      "y": 262,
+      "place": "bedroom"
+    },
+    "T002": {
+      "sensor_type": "temperature",
+      "room": "living",
+      "x": 56,
+      "y": 287,
+      "place": "living room"
+    },
+    "T003": {
+      "sensor_type": "temperature",
+      "room": "kitchen",
+      "x": 51,
+      "y": 102,
+      "place": "kitchen"
+    },
+    "T004": {
+      "sensor_type": "temperature",
+      "room": "hallway",
+      "x": 199,
+      "y": 144,
+      "place": "hallway"
+    },
+    "T005": {
+      "sensor_type": "temperature",
+      "room": "office",
+      "x": 393,
+      "y": 88,
+      "place": "office"
+    }
+  }
+}
