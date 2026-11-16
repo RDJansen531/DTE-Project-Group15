@@ -2,6 +2,17 @@
 
 Smart-home digital twin using the CASAS Aruba recording.
 
+## Project steps
+
+| Step | Status | Where |
+| --- | --- | --- |
+| 1. Dataset | Done | `scripts/prepare_aruba.py`, sections below |
+| 2. Historical replay | Ready to verify | `replay/`, [docs/step2_replay.md](docs/step2_replay.md) |
+| 3. Representation model | Not started | |
+| 4. Machine learning | Not started | |
+| 5. Visualisation | Not started | |
+| 6. Docker packaging | Not started | |
+
 ## Prepared dataset
 
 The local dataset is in `data/aruba/`. It contains only Aruba. The source archive
