@@ -1,3 +1,5 @@
 # Regenerate recordings from the original archive with scripts/prepare_aruba.py.
 /data/aruba/
 __pycache__/
+.venv/
+.DS_Store
